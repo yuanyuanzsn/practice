@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 生成M-N的随机数
+        function random(M, N) {
+            return Math.floor(Math.random() * (N - M + 1) + M)
+        }
+        let n = random(0, 20)
+        let flag = true
+        for(let i = 1; i <= 8; i++) {
+            // 用户输入数字
+            let num = +prompt('请输入一个数字：')
+            
+            // 比较
+            if(num > n) {
+
+                alert('您猜大了')
+            } else if (num < n) {
+
+                alert('您猜小了')
+            } else {
+                flag = false
+                alert('您猜对了')
+                break
+            }
+        }
+        if(flag) {
+                alert('次数已用完')
+            }
+    </script>
+</body>
+</html>
