@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 1、求和封装函数练习
+    // function sum (x, y) {
+    //     return x + y
+    // }
+    // let num1 = +prompt('请输入第一个数字：')
+    // let num2 = +prompt('请输入第二个数字：')
+    // let res = sum(num1, num2)
+    // console.log(res);
+
+    // 3.实现两个数的值交换(函数版本) 
+    // function changeNum (x, y) {
+    //     let temp = x
+    //     x = y
+    //     y = temp
+    //     document.write(`第一个值的结果是${x}<br>第二个值的结果是${y}`)
+    // }
+    // changeNum(3, 4)
+
+    // 4.封装余额函数
+    // function result () {
+    //     let a = +prompt('请输入银行卡余额：')
+    //     let b = +prompt('请输入本月食宿消费金额：')
+    //     let c = +prompt('请输入本月生活消费金额：')
+    //     let sum = a - b - c
+    //     return sum
+    // }
+    // let money = result()
+    // document.write(`银行卡余额还剩${money}元`)
+
+    // 5.封装一个函数,可以求任意数组的和 或 平均值
+    // function handleData (arr = [],flag = true) {
+    //     let sum = 0
+    //     for(let i = 0;i < arr.length ;i++) {
+    //         sum += arr[i]
+    //     }
+    //     if (flag) {
+    //         return sum
+    //     } else {
+    //         return sum / arr.length
+    //     }
+    // }
+    // console.log(handleData([1, 2, 3]))
+    // console.log(handleData([1, 2, 3], true))  // 6
+    // console.log(handleData([1, 2, 3], false))  // 2
+
+    // 封装 some 函数查看数组是否存在某个元素。
+    // function some(ele, arr = []) {
+    //     let flag = false 
+    //     for(let i = 0; i < arr.length; i++) {
+    //         if(ele === arr[i])
+    //         flag = true
+    //         break
+    //     } 
+    //     return flag
+    // }
+    // let re = some('荔枝', ['苹果', '香蕉', '橘子', '荔枝', '梨子'])
+    // console.log(re);
+
+    // 封装 findeIndex 函数返回查找元素在数组中的索引号。
+    // function findeIndex(ele, arr = []) {
+    //     let flag = -1
+    //     for(let i = 0; i < arr.length; i++) {
+    //         if(ele === arr[i]) {
+    //             falg = i
+    //             break
+    //         }
+    //     }
+    //     return falg
+    // }
+    // let re = findeIndex(10, [1, 5, 10, 22, 8, 7])
+    // console.log(re);
+    </script>
+</body>
+</html>
